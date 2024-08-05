@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Karma Community</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+		  body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            background-color:#081b7b;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .navbar-nav .nav-link.active {
+            font-weight: bold;
+            color: #1abc9c !important;
+        }
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 0;
+            background-color:#081b7b;
+            color: white;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+        .btn-custom, .btn-outline-custom {
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .btn-custom {
+            background-color: #1abc9c;
+            color: #fff;
+        }
+        .btn-outline-custom {
+            border: 2px solid #1abc9c;
+            color: #1abc9c;
+        }
+        .logos-section {
+            padding: 50px 0;
+            background-color: #ecf0f1;
+        }
+        .content-section {
+            padding: 50px 0;
+           
+        }
+        .logo-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .content-section img {
+            margin: 20px;
+            max-width: 600px;
+            height: auto;
+            opacity: 0.8;
+        }
+        
+        .contact-info .icon {
+            font-size: 2rem;
+            color: #f1c40f;
+        }
+        .contact-info .contact-detail {
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+                .footer{
+			background-color:#081b7b;
+		}
+	</style>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#"><img src="/image/Logo-Transparent-4.png" width="80" height="80"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="register">Registration</a>
+            </li>
+                <a class="nav-link" href="contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-custom p-2" href="login">Sign In</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="hero-section">
+    <div class="container">
+        <h1>Contact</h1>
+        
+    </div>
+</div>
+
+ <div class="container text-center my-5">
+        <h2>Contact Info</h2>
+        <p>He an thing rapid these after going drawn or. Timed she his law the spoil round defer. In surprise concerns informed betrayed.</p>
+        <div class="row contact-info">
+            <div class="col-12 col-md-4 my-3">
+                <div class="icon">
+                    <img src="/image/email.png" width="25px" alt="Email Icon">
+                </div>
+                <div class="contact-detail">
+                    Office Email
+                </div>
+                <div>
+                    KarmaCommunity@gmail.com<br>
+                    rajeevbaliyan89893@gmail.com
+                </div>
+            </div>
+            <div class="col-12 col-md-4 my-3">
+                <div class="icon">
+                    <img src="/image/call.png" width="25px" alt="Phone Icon">
+                </div>
+                <div class="contact-detail">
+                    Office Phone
+                </div>
+                <div>
+                    +91 97608 62044; +91 90078 62048<br>
+                    +91 99608 26049
+                </div>
+            </div>
+            <div class="col-12 col-md-4 my-3">
+                <div class="icon">
+                    <img src="/image/location.png" width="25px" alt="Location Icon">
+                </div>
+                <div class="contact-detail">
+                    Office Location
+                </div>
+                <div>
+                    5954 Old Cove Heath Rd<br>
+                    Shamli, Uttar Pradesh (UP), 247776
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-section d-flex align-items-center logos-section">
+        <div class="container mt-5">
+            <h1 class="text-center text-secondary mb-2">Get In Touch with Us!</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow mb-3">
+                        <div class="card-body">
+                            <form id="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Your email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Your message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-custom btn-block">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="footer">
+
+    <!-- Footer -->
+    <footer
+            class="text-center text-sm-start text-white p-4 pb-0 "
+           
+            >
+      <!-- Grid container -->
+      <!-- <div class="container p-4 pb-0"> -->
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row justify-content-between">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <a class="navbar-brand" href="#"><img src="/image/Logo-Transparent-4.png" width="80" height="auto"></a>
+            </div>
+           
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0 px-1 text-end">
+              <h3 class="text-uppercase text-start">Contact US</h3>
+
+		        <p>Email: shreshth.karm@gmail.com </p>
+		        <p>Phone: 8976893421</p>
+		        <p>Location: Shamli, Uttar Pradesh, India</p>
+		        
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+  
+        <!-- Section: Social media -->
+        <section class="mb-4 text-center">
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           >
+        © 2024 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+           >SKCommunity.com</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+  <!-- End of .container -->
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

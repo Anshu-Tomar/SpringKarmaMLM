@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Withdrawal Requests</title>
+    <!-- Include Chart.js or any other chart library here -->
+</head>
+<body>
+    <h1>Withdrawal Requests</h1>
+    <div>
+        <p>Total Earnings: <span th:text="${totalEarnings}"></span></p>
+        <p>Total Withdrawn: <span th:text="${totalWithdrawn}"></span></p>
+        <p>Remaining Amount: <span th:text="${remainingAmount}"></span></p>
+    </div>
+
+    <!-- Graph Section -->
+    <canvas id="myChart"></canvas>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Total Earnings', 'Total Withdrawn', 'Remaining Amount'],
+                datasets: [{
+                    label: 'Amount',
+                    data: [/* Use Thymeleaf to insert data here */],
+                    backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'],
+                    borderColor: ['rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

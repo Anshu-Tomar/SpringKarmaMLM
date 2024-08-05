@@ -1,0 +1,7 @@
+logging:
+  level:
+    root: INFO
+    com.example.mlm: DEBUG
+  file:
+    name: mlm-application.log
+    path: /var/log/mlm/

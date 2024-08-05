@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Shreshta</title>
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Shreshta</div>
+        <a href="/" th:href="@{/}">Home</a>
+        <a href="/about" th:href="@{/about}">About</a>
+        <a href="/contact" th:href="@{/contact}">Contact</a>
+        <a href="/logout" th:href="@{/logout}">Logout</a>
+    </div>
+    
+    <!--<div class="container">
+        <th:block th:replace="${body}"></th:block>
+    </div>-->
+    
+    <div class="footer">
+        <p>&copy; 2024 Shreshta. All rights reserved.</p>
+    </div>
+</body>
+</html>
